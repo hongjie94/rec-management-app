@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Activity
+{% endblock %}
+
+{% block main %}
+<div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">	
+<h2 class="head-sub">Activity</h2>
+{% if deletedclients %}
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+      <th>Add</th>
+      <th>Delete/Cancel</th>
+      <th>Appointment</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Mobile</th>
+      <th>APT Size</th>
+      <th>Buget</th>
+      <th>Move Date</th>
+      <th>WEST/EAST</th>
+      <th>UP/DOWN</th>
+      <th>Pets</th>
+      <th>Grantor</th>
+      <th>Occupation</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for deletedclient in deletedclients %}
+      <tr>
+        <td>{{deletedclient["modified"]}}</td>
+        <td>{{deletedclient["delete_date"]}}</td>
+        <td>{{deletedclient["appt_date"]}}</td>
+        <td>{{deletedclient["clientname"]}}</td>
+        <td>{{deletedclient["email"]}}</td>
+        <td>{{deletedclient["mobile"]}}</td>
+        <td>{{deletedclient["aptsize"]}}</td>
+        <td>{{deletedclient["budget"]}}</td>
+        <td>{{deletedclient["move_date"]}}</td>
+        <td>{{deletedclient["w_or_e"]}}</td>
+        <td>{{deletedclient["up_down_town"]}}</td>
+        <td>{{deletedclient["pets"]}}</td>
+        <td>{{deletedclient["grantor"]}}</td>
+        <td>{{deletedclient["note"]}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% else %}
+<div class="nodata mt-5">
+  <p class="mb-5"> No data available ...</p>
+</div>
+{% endif %}
+</div>    
+{% endblock %}

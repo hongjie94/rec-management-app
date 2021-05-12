@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+<style>
+    /* current page bg */
+    body {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../static/erro.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        /* color: #fff; */
+    }
+</style>
+{% if session.user_id %}
+<div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">	
+{% else %}   
+<div class="col-md-12 ms-sm-auto col-lg-12 px-md-4">
+{% endif %}   	
+    <div class="container erroAlert">
+        <div class="alert alert-danger" role="alert"> 
+            <span data-feather="alert-triangle"></span> {{ bottom | urlencode }}
+        </div>
+        <h1>404</h1>
+        <p>page not found ... </p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

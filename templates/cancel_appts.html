@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cancel
+{% endblock %}
+
+{% block main %}
+<div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <h2 class="head-sub ml-3">Cancel Appointment</h2></2>
+  <form action="/cancel_appts" method="post">
+    <div class="form-group col-md-3">
+      <input autocomplete="off" 
+        class="form-control inptmw" 
+        name="clientname" 
+        placeholder="Client Name" 
+        required 
+        type="text"
+      >
+    </div>
+    <div class="form-group col-md-3 mb-4">
+      <input 
+        class="form-control inptmw" 
+        name="mobile"  
+        required placeholder="Client Mobile" 
+        type="text"
+      >
+    </div>
+    <button id="button" class="btn btn-dark ml-3 px-4" type="submit">Cancel Appointment</button>
+  </form>
+</div>    
+{% endblock %}

@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update
+{% endblock %}
+
+{% block main %}
+<div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">	
+<h2 class="head-sub py-2 border-bottom">Update Client's Informations</h2>
+ <form action="/update" method="post">
+    <div class="row mb-3">
+        <div class="col-md-4 col-lg-3 mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input 
+            type="text"
+            autocomplete="off"  
+            autofocus
+            name="clientname" 
+            placeholder="Client Name"
+            class="form-control" 
+            id="name"  
+          >
+        </div>
+
+        <div class="col-md-4 col-lg-3 mb-3">
+          <label for="Email" class="form-label">Email</label>
+          <input 
+            name="clientemail" 
+            placeholder="Email Address"
+            type="email" 
+            class="form-control" 
+            id="Email"  
+          >
+        </div>
+        <div class="col-md-4 col-lg-3 mb-3">
+          <label for="Mobile" class="form-label">Mobile</label>
+          <input
+            name="mobile" 
+            placeholder="Mobile" 
+            type="tel"
+            class="form-control" 
+            id="Mobile"  
+          >
+        </div>
+      </div>
+
+      <div class="row mb-3 ">
+        <div class="col-md-4 col-lg-3 mb-3">
+          <label for="occupation" class="form-label">Occupation</label>
+          <input type="text" 
+            name="note" 
+            placeholder="Client Occupation"
+            class="form-control" 
+            id="occupation"  
+          >
+        </div>
+        <div class="col-md-4 col-lg-3 mb-4">
+          <label for="budget" class="form-label">Budget</label>
+          <div class="input-group">
+            <span class="input-group-text">$</span>
+              <input 
+                type="text" 
+                id="budget"  
+                class="form-control" 
+                name="budget" 
+                placeholder="Budget" 
+                aria-label="Amount (to the nearest dollar)"
+              >
+            <span class="input-group-text">.00</span>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <label for="Guarantors" class="form-label">Required Guarantors?</label>
+            <div class="row">
+              <select 
+                class="form-select form-select-lg mb-3 ml-3 p-2 px-5"
+                name="grantor"
+                aria-label="Guarantors"
+              >
+                <option value="Yes" selected>Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-4 col-lg-3 mb-2">
+          <label for="size" class="form-label row ml-0">Bedrooms</label>
+          <select 
+            class="form-select form-select-lg mb-3 p-2 px-5"
+            name="size"
+            aria-label="size"
+          >
+            <option value="Studio" selected>Studio</option>
+            <option value="1BR">1BR</option>
+            <option value="2BR">2BR</option>
+            <option value="3BR">3BR</option>
+            <option value="4BR">4BR+</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-lg-3 mb-2">
+          <label for="Pets" class="form-label">Pets</label>
+          <input type="text" 
+            name="pets"
+            placeholder="Pets"
+            class="form-control" 
+            id="Pets"  
+          >
+        </div>
+      </div>
+      
+      <div class="row mb-3">
+        <div class="col-md-4 col-lg-3 mb-3">
+          <label for="area" class="form-label row ml-0">Neighborhoods</label>
+          <select 
+            class="form-select form-select-lg mb-3 p-2 px-5"
+            name="area2"
+            aria-label="area"
+          >
+            <option value="WEST" selected>WEST</option>
+            <option value="EAST">EAST</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-lg-3 mb-3">
+          <label for="Pets" class="form-label">How Far Up/Down</label>
+          <input 
+            name="area" 
+            placeholder="Uptown/Downtown"
+            type="text" 
+            class="form-control" >
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-5 col-lg-3 mb-3">
+          <label for="name" class="form-label">Move Date</label>
+          <input 
+            type="date" 
+            name="movedate"
+            class="form-control" 
+            id="name"  
+            >
+        </div>
+      </div>
+        <button class="btn btn-dark px-5 mb-5" type="submit">Update Client Info</button>
+    </form>
+</div>    
+{% endblock %}

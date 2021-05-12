@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block main %}
+<div class="col-md-9 ms-sm-auto col-lg-10 px-md-4">	
+<h2 class="head-sub ml-3">Search Clients</h2>
+  <form action="/search" method="post">
+    <div class="form-group col-md-3">
+      <input autocomplete="off" autofocus class="form-control inptmw" name="clientname" placeholder="Client Name" type="text">
+    </div>
+    <div class="form-group col-md-3 mb-4">
+      <input class="form-control inptmw" name="mobile" placeholder="Client Mobile" type="text">
+    </div>
+      <button id="button" class="btn btn-dark ml-3 px-5" type="submit">Search</button>
+  </form>
+</div>    
+{% endblock %}
