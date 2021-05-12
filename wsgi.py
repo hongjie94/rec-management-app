@@ -65,7 +65,7 @@
 # may need to rename it during the import:
 #
 #
-import sys
+# import sys
 #
 ## The "/home/pythonwebapp" below specifies your home
 ## directory -- the rest should be the directory you uploaded your Flask
@@ -73,11 +73,11 @@ import sys
 ## "git clone git@github.com/myusername/myproject.git"
 ## ...or uploaded files to the directory "myproject", then you should
 ## specify "/home/pythonwebapp/myproject"
-path = '/home/pythonwebapp/Client-Management-apps'
-if path not in sys.path:
-    sys.path.append(path)
+# path = '/home/pythonwebapp/Client-Management-apps'
+# if path not in sys.path:
+#     sys.path.append(path)
 
-from main import app as asapplication
+from main import app as application
 
 #
 # NB -- many Flask guides suggest you use a file called run.py; that's

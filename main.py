@@ -93,7 +93,6 @@ def add():
   else:
     return render_template("add.html")
 
-
 @app.route("/appointment", methods=["GET", "POST"])
 @login_required
 def appointment():
