@@ -6,7 +6,7 @@ Real Estate Client Management app
 * Bootstrap
 * CSS3
 * HTML5
-* SQLITE3
+* SQL
 
 ## RECM-Diagram
 ![Screenshot](/RECM-Diagram.jpg)
