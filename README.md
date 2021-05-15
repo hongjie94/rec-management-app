@@ -9,4 +9,4 @@ Real Estate Client Management app
 * SQLITE3
 
 ## RECM-Diagram
-![Screenshot](CM-Diagram.jpg)
+![Screenshot](/CM-Diagram.jpg)
