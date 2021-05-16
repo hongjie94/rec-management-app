@@ -2,6 +2,7 @@
 Real Estate Client Management app
 
 ## Technologies Used
+* Flask
 * Jquery
 * Bootstrap
 * CSS3
