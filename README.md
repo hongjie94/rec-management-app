@@ -7,7 +7,7 @@ Real Estate Client Management app
 * Bootstrap
 * CSS3
 * HTML5
-* SQL
+* SQLite3
 * Google Cloud (Hosting)
 
 ## RECM-Diagram
