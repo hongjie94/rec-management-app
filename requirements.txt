@@ -88,7 +88,6 @@ pycryptodome==3.17
 pyflakes==3.0.1
 pylint==2.6.0
 pymilvus==2.2.6
-pyobjc==9.0.1
 pyobjc-core==9.0.1
 pyobjc-framework-Accessibility==9.0.1
 pyobjc-framework-Accounts==9.0.1
