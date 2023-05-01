@@ -15,7 +15,7 @@ certifi==2020.12.5
 cfgv==3.3.1
 chardet==4.0.0
 charset-normalizer==3.1.0
-click==7.1.2
+click==8.0.0
 colorama==0.4.6
 coverage==7.2.3
 cs50==6.0.2
