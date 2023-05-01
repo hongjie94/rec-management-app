@@ -29,6 +29,7 @@ dnspython==2.3.0
 docker==6.0.1
 duckduckgo-search==2.8.6
 exceptiongroup==1.1.1
+ez-setup==0.9
 filelock==3.0.12
 flake8==6.0.0
 Flask==1.1.2
