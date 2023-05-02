@@ -11,6 +11,6 @@ Real Estate Client Management app
 * Google Cloud (Hosting)
 
 ## RECM-Diagram
-~~###http://recmanagement-app.rj.r.appspot.com~~
+~~http://recmanagement-app.rj.r.appspot.com~~
 ### [https://rec-management-app.herokuapp.com](https://rec-management-app.herokuapp.com)
 ![Screenshot](/RECM-Diagram.jpg)
