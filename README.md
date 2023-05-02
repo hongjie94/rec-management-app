@@ -8,7 +8,7 @@ Real Estate Client Management app
 * CSS3
 * HTML5
 * SQLite3
-* Google Cloud (Hosting)
+* ~~Google Cloud~~ Heroku (Hosting)
 
 ## RECM-Diagram
 ~~http://recmanagement-app.rj.r.appspot.com~~
